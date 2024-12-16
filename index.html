@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-techno open call</title>
+    <style>
+       @font-face {
+       font-family: 'Andale';
+       src: url(Andale-Mono.ttf);
+       }
+
+        body {
+            font-family: 'Andale', monospace;
+            font-weight: 700;
+            margin: 0;
+            overflow: hidden;
+        }
+        mark {
+        background-color: rgb(68, 0, 255);
+         color: rgb(255, 255, 255);
+         }
+
+        /* Container for the entire page */
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            color: white;
+            text-align: center;
+        }
+
+        /* Background video styling */
+        .video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+        }
+
+        /* Logo styling */
+        .logo {
+            position: absolute;
+            top: -270px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100vw;
+            height: 80%;
+            z-index: 2;
+        }
+
+        /* Text content styling */
+        .text-content {
+            position: relative;
+            width: 70%;
+            font-size: 20px;
+            margin: 20px;
+            margin-top: 10%;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.603);
+            border-radius: 10px;
+            overflow-y: auto;
+            max-height: 60vh;
+            z-index: 1;
+        }
+
+        p {
+            color: rgb(255, 0, 217);
+            text-align: left;
+        }
+
+        h3{
+            color: rgb(255, 0, 217);
+            text-align: left; 
+        }
+
+        /* Button styling */
+        .button-container {
+            position: absolute;
+            bottom: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+            font-family: 'Andale', monospace;
+            background-color: #ff33f8;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 15px 300px;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ff2626;
+        }
+
+        @media (max-width: 768px) {
+            .text-content {
+                font-size: 18px;
+            }
+            .text-content {
+            max-height: 80vh;
+
+        }
+            .button {
+                font-size: 16px;
+                padding: 12px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Background video -->
+        <div class="video"> 
+            <img src="background.gif" alt="Background Video" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+       
+        <!-- Logo -->
+        <img src="bio-techno-logo.png" alt="Logo" class="logo">
+
+        <!-- Text content -->
+        <div class="text-content">
+           <h3>Open call for 2 day workshop and a pop up exhibition
+            <br>Deadline to apply the 6th of January</h1> 
+                <p>
+                <br><mark>--!Schedule!--</mark>
+                <br><mark>1-2nd of February from 10:30 till 17:30</mark>   
+                <br>Bio-techno workshop - you will learn about electronics, circuits, programming and how it can intersect with art+science. You will develop small projects using materials provided. This is meant to be a hackathon (rapid and collaborative prototyping) and we will be looking at making fun projects, rather than finished pieces. 
+                <br><mark>3rd of February at 19:00  </mark> 
+                <br>Pop up exhibition - we will present what we made together in Filet gallery for one night. 
+                <br><mark>--!What to expect!--</mark>
+                <br>Every participant will get a robotics kit to take home, budget for their project + communal lunches, tea, coffee, snacks on both days. Accessibility needs will be met. ++ It is going to be a fun experience, you can meet people, learn something new and present your project.
+                
+                <br><mark>--!Equipment!--</mark>
+                <br>Participants are encouraged to bring their own computers, but a limited number of computers are available if needed. The rest will be provided.
+                <br><mark>--!Who!--</mark>
+                <br>Anyone is welcome to apply. People who especially feel excluded from such spaces, opportunities and topics are encouraged to apply!
+                <br><mark>--!Where!--</mark>
+                <br>FILET gallery, London
+                <br>103 Murray Grove
+                <br>N1 7QP
+                
+                <br><mark>Have any questions?</mark>
+                <br>Please email hello@xyana.xyz
+               </p>
+               <p><br> Supported using public funding by Arts Council England</p>
+                
+            
+        </div>
+
+        <!-- Button -->
+        <div class="button-container">
+            <button class="button" onclick="window.location.href='https://tally.so/r/nr2v6R';">
+                Apply
+            </button>
+        </div>
+        
+
+        </div>
+    </div>
+</body>
+</html>
